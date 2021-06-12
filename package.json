@@ -1,0 +1,24 @@
+{
+  "name": "sanity-groq-filter",
+  "version": "0.0.1",
+  "description": "Curated List of GROQ Filters.",
+  "main": "src/index.js",
+  "scripts": {
+    "none": "echo \"Not needed\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HansKre/sanity-groq-filter"
+  },
+  "keywords": [
+    "sanity",
+    "groq",
+    "filter"
+  ],
+  "author": "Hans Krebs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HansKre/sanity-groq-filter/issues"
+  },
+  "homepage": "https://github.com/HansKre/sanity-groq-filter#readme"
+}
