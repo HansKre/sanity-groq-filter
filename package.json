@@ -1,10 +1,13 @@
 {
   "name": "sanity-groq-filter",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "description": "Curated List of GROQ Filters.",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "none": "echo \"Not needed\" && exit 0"
+    "build": "babel src --out-dir dist --extensions '.js'",
+    "prepublishOnly": "npm run build",
+    "watch": "babel --watch src --out-dir dist --extensions '.js'",
+    "tsc": "tsc"
   },
   "repository": {
     "type": "git",
@@ -20,5 +23,9 @@
   "bugs": {
     "url": "https://github.com/HansKre/sanity-groq-filter/issues"
   },
-  "homepage": "https://github.com/HansKre/sanity-groq-filter#readme"
+  "homepage": "https://github.com/HansKre/sanity-groq-filter#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.14.3",
+    "@babel/preset-env": "^7.14.5"
+  }
 }

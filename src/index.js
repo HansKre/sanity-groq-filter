@@ -7,7 +7,7 @@
  */
 const unusedReferences = ({ document, parent }) => {
     const refsToExclude = []
-    if (parent?.length > 0) {
+    if (parent && parent.length > 0) {
         parent.forEach(entry => {
             if (entry.hasOwnProperty('_ref')) refsToExclude.push(entry._ref)
         })
